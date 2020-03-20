@@ -1,0 +1,25 @@
+<head>
+	<meta charset="UTF-8">
+	<title>3Tas1</title>
+	
+</head>
+<body>
+	<div id='out'></div>
+	<input id ="vvod">
+	<input type ="button" value="click me" onclick="work()"/>
+	<script>
+	let divOut = document.getElementById ('out');
+		function work() {
+			let inV = document.getElementById('vvod')
+			let edge = inV.value;
+				if (edge > 0) {
+					var area = 6 * (edge * edge);
+					divOut.innerHTML = area;
+				}else {
+						divOut.innerHTML = "Значение edge должно быть положительным"
+						  }
+					
+	}
+	</script>
+</body>
+</html>
