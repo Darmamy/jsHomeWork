@@ -1,0 +1,29 @@
+<head>
+	<meta charset="UTF-8">
+	<title>3Tas12</title>
+	
+</head>
+<body>
+	<div id='out'></div>
+	<input id ="dividend">
+	<input id ="divider">
+	<input type ="button" value="click me" onclick="work()"/>
+	<script>
+	let divOut = document.getElementById ('out');
+		function work() {
+			let inV = document.getElementById('dividend')
+			let dividend = inV.value;
+			let inD = document.getElementById('divider');
+			let divider =inD.value
+				if (divider > 0) {
+					var result = dividend / divider;
+					var ost = dividend % divider;
+					divOut.innerHTML = 'Делимое ' + dividend + ', делитель ' + divider + ', частное' + result + ', остаток' + ost;
+				}else {
+						divOut.innerHTML = "Делитель не может быть равен 0"
+						  }
+					
+	}
+	</script>
+</body>
+</html>
