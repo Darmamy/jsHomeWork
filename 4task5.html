@@ -1,0 +1,47 @@
+<head>
+	<meta charset="UTF-8">
+	<title>4Task5</title>
+	
+</head>
+<body>
+	<div id='Vx'></div>
+	<div id='Vy'></div>
+	<div id='Vz'></div>
+	<input id ="vvodX">
+	<input id ="vvodY">
+	<input id ="vvodZ">
+	<input type ="button" value="click me" onclick="work()"/>
+	<script>
+	let divOut = document.getElementById ('Vx');
+	let divY = document.getElementById ('Vy');
+	let divZ = document.getElementById ('Vz');
+		function work() {
+			let inX = document.getElementById('vvodX')
+			let x = inX.value;
+			let inY = document.getElementById('vvodY')
+			let y = inY.value;
+			let inZ = document.getElementById('vvodZ')
+			let z = inZ.value;
+				if (x > 0) {
+					var result =x*x;
+					divOut.innerHTML = result;
+				}else {
+						divOut.innerHTML = x
+						  }
+						  if (y > 0) {
+					var result =y*y;
+					divY.innerHTML = result;
+				}else {
+						divY.innerHTML = y
+						  }
+						  if (z > 0) {
+					var result =z*z;
+					divZ.innerHTML = result;
+				}else {
+						divZ.innerHTML = z
+						  }
+					
+	}
+	</script>
+</body>
+</html>
