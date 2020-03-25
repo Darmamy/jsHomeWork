@@ -1,6 +1,6 @@
 <head>
 	<meta charset="UTF-8">
-	<title>2Tas8</title>
+	<title>2Tas10</title>
 	
 </head>
 <body>
@@ -9,13 +9,11 @@
 	<input type ="button" value="click me" onclick="work()"/>
 	<script>
 	let divOut = document.getElementById ('out');
-		function work() {
-			let inV = document.getElementById('vvod')
-			let vvod = inV.value;
-			var result;
-						var aRad= vvod * 3.14 / 180;
-						var a = Math.sin(aRad);
-			result = a
+	function work() {
+		let inV = document.getElementById('vvod')
+		let vvod = inV.value;
+		var aRad= vvod * Math.PI / 180;
+		var result = Math.sin(aRad);
 		divOut.innerHTML = result.toFixed(4);
 	}
 	</script>

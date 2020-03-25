@@ -1,0 +1,25 @@
+<head>
+	<meta charset="UTF-8">
+	<title>4Tas11</title>
+	
+</head>
+<body>
+	<div id='out'></div>
+	<input id ="a"/>
+	<input type ="button" value="click me" onclick="work()"/>
+	<script>
+	let divOut = document.getElementById ('out'); 
+		function work() {
+		let inA = document.getElementById("a");
+		let temp = "";
+		let n = 7; // ограничение - переменная от которой зависит количество действий
+		temp = inA.value
+		for (let i = 1; i < n; i++){
+			temp += inA.value; 
+		}
+		divOut.innerHTML = '"' + temp +'"';
+	}
+	
+	</script>
+</body>
+</html>

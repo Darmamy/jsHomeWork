@@ -12,8 +12,6 @@
 	<input id ="vvodZ">
 	<input type ="button" value="click me" onclick="work()"/>
 	<script>
-	let divOut = document.getElementById ('Vx');
-	let divY = document.getElementById ('Vy');
 	let divZ = document.getElementById ('Vz');
 		function work() {
 			let inX = document.getElementById('vvodX')
@@ -22,24 +20,28 @@
 			let y = inY.value;
 			let inZ = document.getElementById('vvodZ')
 			let z = inZ.value;
+			let result = '';
+			
 				if (x > 0) {
-					var result =x*x;
-					divOut.innerHTML = result;
+					 result = result + x*x + '; ';
+					
 				}else {
-						divOut.innerHTML = x
-						  }
-						  if (y > 0) {
-					var result =y*y;
-					divY.innerHTML = result;
+					result = result + x + '; '
+				}
+				
+				if (y > 0) {
+					 result =result + y*y + '; ';
+					
 				}else {
-						divY.innerHTML = y
-						  }
-						  if (z > 0) {
-					var result =z*z;
-					divZ.innerHTML = result;
+					result = result + y + '; '
+				}
+				
+				if (z > 0) {
+					 result = result + z*z + '; ';
 				}else {
-						divZ.innerHTML = z
-						  }
+						result = result + z + '; '
+				}
+			divZ.innerHTML = result
 					
 	}
 	</script>
