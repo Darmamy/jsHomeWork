@@ -18,7 +18,7 @@
 				if (divider > 0) {
 					var result = dividend / divider;
 					var ost = dividend % divider;
-					divOut.innerHTML = 'Делимое ' + dividend + ', делитель ' + divider + ', частное' + result + ', остаток' + ost;
+					divOut.innerHTML = 'Делимое ' + dividend + ', делитель ' + divider + ', частное' + Math.floor(result) + ', остаток' + ost;
 				}else {
 						divOut.innerHTML = "Делитель не может быть равен 0"
 						  }

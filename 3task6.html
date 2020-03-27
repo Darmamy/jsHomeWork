@@ -9,16 +9,15 @@
 	<input type ="button" value="click me" onclick="work()"/>
 	<script>
 	let divOut = document.getElementById ('out');
-		function work() {
-			let inV = document.getElementById('vvod')
-			let x = inV.value;
-				if (x > 0) {
-					var result =Math.sqrt(x);
-					divOut.innerHTML = result;
-				}else {
-						divOut.innerHTML = "Значение X должно быть неотрицательным"
-						  }
-					
+	function work() {
+		let inV = document.getElementById('vvod')
+		let x = inV.value;
+		if (x > 0) {
+			var result =Math.sqrt(x);
+			divOut.innerHTML = result;
+		}else {
+			divOut.innerHTML = "Значение X должно быть неотрицательным"
+		}		
 	}
 	</script>
 </body>

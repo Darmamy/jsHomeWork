@@ -9,16 +9,15 @@
 	<input type ="button" value="click me" onclick="work()"/>
 	<script>
 	let divOut = document.getElementById ('out');
-		function work() {
-			let inV = document.getElementById('vvod')
-			let edge = inV.value;
-				if (edge > 0) {
-					var area = 6 * (edge * edge);
-					divOut.innerHTML = area;
-				}else {
-						divOut.innerHTML = "Значение edge должно быть положительным"
-						  }
-					
+	function work() {
+		let inV = document.getElementById('vvod')
+		let edge = inV.value;
+		if (edge > 0) {
+			var area = 6 * (edge * edge);
+			divOut.innerHTML = area;
+		}else {
+			divOut.innerHTML = "Значение edge должно быть положительным"
+		}			
 	}
 	</script>
 </body>

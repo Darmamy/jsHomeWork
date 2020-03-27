@@ -1,0 +1,81 @@
+<head>
+	<meta charset="UTF-8">
+	<title>4Tas11</title>
+	
+</head>
+<body>
+	<div id='out'></div>
+	<input id ="a">
+	<input type ="button" value="1" onclick="work()"/>
+	<input type ="button" value="2" onclick="work2()"/>
+	<input type ="button" value="3" onclick="work3()"/>
+	<input type ="button" value="4" onclick="work4()"/>
+	<script>
+	let divOut = document.getElementById ('out'); 
+		function work() {
+		let inA =document.getElementById("a");
+		let temp = "";
+		temp +="Предисловие<br>";
+		temp += "Глава 1 <br>";
+		temp += "Глава 2 <br>";
+		temp += "Глава 3 <br>";
+		temp += "Глава 4 <br>";
+		temp += "Глава 5 <br>";
+		temp += "Глава 6 <br>";
+		temp += "Глава 7 <br>";
+		temp += "Послесловие";
+		divOut.innerHTML = temp;
+	}
+//Ищем повторяющиеся действия
+//Ищем закономерность, с чего начинается, как меняется, когда заканчивается
+//Заменяем закономерность на переменную
+	
+			function work2() {
+				let inA =document.getElementById("a");
+				let temp = "";
+				let i = 1;
+				temp +="Предисловие<br>";
+				temp += "Глава " + i + "<br>";
+				i++;
+				temp += "Глава " + i + "<br>";
+				i++;
+				temp += "Глава " + i + "<br>";
+				i++;
+				temp += "Глава " + i + "<br>";
+				i++;
+				temp += "Глава " + i + "<br>";
+				i++;
+				temp += "Глава " + i + "<br>";
+				i++;
+				temp += "Глава " + i + "<br>";
+				temp += "Послесловие";
+				divOut.innerHTML = temp;
+		}
+		function work3() {
+				let inA =document.getElementById("a");
+				let temp = "";
+				let i = 1; //счетчик - переменная, которая увеличивается с каким то шагом
+				temp += "Предисловие<br>";
+				let n = 8; // ограничение - переменная от которой зависит количество действий
+				while(i<n){//условие продолжение работы
+					temp += "Глава " + i + "<br>";
+					i++; //шаг равен 1
+				}
+				temp += "Послесловие";
+				divOut.innerHTML = temp;
+		}
+		
+		function work4() {
+				let inA =document.getElementById("a");
+				let temp = "";
+				let n = 8; // ограничение - переменная от которой зависит количество действий
+				temp +="Предисловие<br>";
+				for (let i = 1; i < n; i++){
+					temp += "Глава " + i + "<br>";
+				}
+				temp += "Послесловие";
+				divOut.innerHTML = temp;
+		}
+	</script>
+</body>
+</html>
