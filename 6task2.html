@@ -1,0 +1,26 @@
+<head>
+	<meta charset="UTF-8">
+	<title>6Task2</title>
+	
+</head>
+<body>
+	<div id='out'></div>
+	<input type = "number" id ="a"/>
+	<input type ="button" value="click me" onclick="work()"/>
+	<script>
+	let divOut = document.getElementById ('out'); 
+		function work() {
+		let inA = document.getElementById("a");
+		var temp;
+		temp = inA.value
+		let n = 10; // ограничение - переменная от которой зависит количество действий
+		for (let i =1; i <= n; i++){
+			temp = temp +'<br>' +'---<br>'; 
+			divOut.innerHTML = temp;
+		}
+		
+	}
+	
+	</script>
+</body>
+</html>
