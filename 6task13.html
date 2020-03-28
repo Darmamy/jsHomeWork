@@ -1,0 +1,32 @@
+<head>
+	<meta charset="UTF-8">
+	<title>6Task3</title>
+	
+</head>
+<body>
+	<div id='out'></div>
+	<input id ="a"/>
+	<input id ="b"/>
+	<input type ="button" value="click me" onclick="work()"/>
+	<script>
+	let divOut = document.getElementById ('out'); 
+		function work() {
+		let inA = document.getElementById("a");
+		let inB =document.getElementById("b");
+		let temp = "";
+		let A = parseFloat(inA.value);
+		let	B = parseFloat(inB.value);
+		if (A <= B) {
+			while(A <= B) {
+				temp += A + ';';
+				A++;
+			}
+			divOut.innerHTML = temp;
+		}else{
+		 divOut.innerHTML = 'Значение A должно быть не больше значения B';
+		}	
+	}
+	
+	</script>
+</body>
+</html>

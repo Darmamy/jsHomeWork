@@ -11,14 +11,37 @@
 	let divOut = document.getElementById ('out'); 
 		function work() {
 		let inA = document.getElementById("a");
-		var temp;
-		temp = inA.value
+		var temp= '',a ; //а вводимое число
+		a = parseFloat(inA.value);
 		let n = 10; // ограничение - переменная от которой зависит количество действий
-		for (let i =1; i <= n; i++){
-			temp = temp +'<br>' +'---<br>'; 
-			divOut.innerHTML = temp;
+		let j = 0; //счетчик
+		while (j<n){
+			temp += a  + '<br>' + '---<br>';
+			a = a + 1;
+			j++;
+			
+		}
+		divOut.innerHTML = temp;
 		}
 		
+		function work2() {
+		let i, temp = '', a = 5;
+		temp += a  + '<br>' + '---<br>';
+		a = a + 1;
+		i++;
+		temp += a  + '<br>' + '---<br>';
+		a = a + 1;
+		i++;
+		temp += a  + '<br>' + '---<br>';
+		a = a + 1;
+		i++;
+		temp += a  + '<br>' + '---<br>';
+		a = a + 1;
+		i++;
+		temp += a  + '<br>' + '---<br>';
+		a = a + 1;
+		i++;
+		divOut.innerHTML = temp;
 	}
 	
 	</script>

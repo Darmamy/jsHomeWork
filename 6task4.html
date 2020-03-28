@@ -1,0 +1,59 @@
+<head>
+	<meta charset="UTF-8">
+	<title>6Task4</title>
+	
+</head>
+<body>
+	<div id='out'></div>
+	
+	<input id ="a"/>
+	<input type ="button" value="click me" onclick="work()"/>
+	<script>
+	let divOut = document.getElementById ('out'); 
+		function work() {
+		let inA = document.getElementById("a");
+		var temp= ''
+		let n = 20; // ограничение - переменная от которой зависит количество действий
+		let j = 1; //счетчик
+		let g = 453;
+		while (j<=n){
+			temp += j + ' '+ g + '<br>';
+			g += 453
+			j++;
+			
+		}
+		divOut.innerHTML = 'фунт ' + ' ' + 'грамм' + '<br>' + temp;
+		}
+	
+			function work2() {
+		let inA = document.getElementById("a");
+		var temp= '',a ; //а вводимое число
+		a = 1;
+		let n = 5; // ограничение - переменная от которой зависит количество действий
+		let j = 1; //счетчик
+		let g = 453;
+		
+			temp += j + ' ' + g+ '<br>'
+			g += 453; 
+			j++;
+			temp += j + ' ' + g+ '<br>'
+			g += 453; 
+			j++;
+			temp += j + ' ' + g+ '<br>'
+			g += 453; 
+			j++;
+			temp += j + ' ' + g+ '<br>'
+			g += 453; 
+			j++;
+			temp += j + ' ' + g+ '<br>'
+			g += 453; 
+			j++;
+			temp += j + ' ' + g + '<br>'
+			g += 453; 
+			j++;
+			divOut.innerHTML = 'фунт ' + ' ' + 'грамм' + '<br>' + temp;
+		}
+		
+	</script>
+</body>
+</html>
